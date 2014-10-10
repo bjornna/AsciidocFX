@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
@@ -14,143 +13,292 @@
     <![endif]-->
 
     <title>asciidoc fx editor by rahmanusta</title>
-  </head>
+</head>
 
-  <body>
-    <header>
-      <div class="inner">
+<body>
+<header>
+    <div class="inner">
         <h1>asciidoc fx editor</h1>
+
         <h2>Asciidoc Book Editor based on Java FX 8</h2>
-        <a href="https://github.com/rahmanusta/AsciidocFX" class="button"><small>View project on</small> GitHub</a>
-      </div>
-    </header>
-
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <p>== Asciidoc Editor based on JavaFX 8</p>
-
-<p>Asciidoc FX is a book editor to build PDF, Epub or Mobi ebooks.</p>
-
-<p>=== Features</p>
-
-<ul>
-<li>Multi-platform (Windows, Mac, Linux ..)</li>
-<li>Creating Asciidoc Books</li>
-<li>Creating PDF, Epub, Mobi, Docbook</li>
-<li>Full-Screen Support</li>
-<li>Real-Time Preview</li>
-<li>External Browser Support</li>
-<li>Table Generator</li>
-</ul>
-
-<p><em><a href="http://youtu.be/2goMtz_vdtM%5BVideo">http://youtu.be/2goMtz_vdtM[Video</a> - Writing Books with Asciidoc FX]</em></p>
-
-<p>=== Used Technologies</p>
-
-<p>AsciidocFX uses Java, JavaScript and XML related technologies.</p>
-
-<ul>
-<li>Java 8</li>
-<li>Java FX 8</li>
-<li>Nashorn JavaScript Engine</li>
-<li>Asciidoctor.js</li>
-<li>Spring Boot</li>
-<li>Spring WebSocket</li>
-<li>Docbook</li>
-<li>Apache Fop</li>
-<li>Saxon 6.5</li>
-<li>Ace editor</li>
-</ul>
-
-<p>=== Some Shortcuts</p>
-
-<p>AsciidocFX has some custom shortcuts. If you suggest us any shortcut request, we can implement i.t</p>
-
-<p>[width="100%",options="header,footer"]
-|====================
-|Shortcut |Detail 
-|<em>tblx,y</em> <em>press Tab</em> |Generates asciidoc table (x=row,y=column)
-|<em>tblx.y</em> <em>press Tab</em> |Generates asciidoc table (x=row,y=column)
-|<em>src</em> <em>press Tab</em> |Generates asciidoc source block 
-|<em>img</em> <em>press Tab</em> |Generates image section 
-|<em>book</em> <em>press Tab</em> |Generates book header section
-|<em>Ctrl+B</em> |Bolds selection
-|<em>Ctrl+I</em> |Italices selection 
-|<em>Ctrl+D</em> |Duplicates selection 
-|<em>Ctrl+X</em> |Removes current line 
-|<em>Ctrl+N</em> |Creates new empty doc
-|<em>Ctrl+S</em> |Saves current doc
-|<em>Ctrl-Shift-C</em> |Surrounds backtick `` selection
-|<em>F12</em> | Opens Firebug Lite
-|====================</p>
-
-<p>=== AsciidocFX Configuration</p>
-
-<p>You can configurate AsciidocFX with <code>config.yml</code> file in <code>/conf</code> directory</p>
-
-<p>You can change Ace theme, font size, font family and other sections by editing it.</p>
-
-<p>=== How to Run AsciidocFX (For Users)</p>
-
-<ol>
-<li>Firstly, install <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html%5BJRE">http://www.oracle.com/technetwork/java/javase/downloads/index.html[JRE</a> 8]</li>
-<li>Download the latest <a href="https://github.com/rahmanusta/AsciidocFX/releases%5BAsciidocFX.zip%5D">https://github.com/rahmanusta/AsciidocFX/releases[AsciidocFX.zip]</a> and Extract it </li>
-<li>Run
-
-<ul>
-<li>
-<code>bin/asciidocfx.bat</code> or <code>bin/asciidocfx.sh</code>
-</li>
-</ul>
-</li>
-</ol>
-
-<p>=== How to Build executable JAR (For Developers)</p>
-
-<ol>
-<li>Firstly, install <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html%5BJDK">http://www.oracle.com/technetwork/java/javase/downloads/index.html[JDK</a> 8]</li>
-<li>Download <a href="http://maven.apache.org/download.cgi%5BApache">http://maven.apache.org/download.cgi[Apache</a> Maven] and set <code>/bin</code> directory to environment variables</li>
-<li>Enter <code>AsciidocFX</code> directory and run <code>$ mvn clean install</code>
-</li>
-<li>Follow to <code>target/</code> directory and you will see <code>AsciidocFX.zip</code>
-</li>
-</ol>
-
-<p>=== Support</p>
-
-<p>Support AsciidocFX with pull request or open an issue for bug &amp; feature request.</p>
-
-<p>Thanks.</p>
-        </section>
-
-        <aside id="sidebar">
-          <a href="https://github.com/rahmanusta/AsciidocFX/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/rahmanusta/AsciidocFX/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/rahmanusta/AsciidocFX"></a> is maintained by <a href="https://github.com/rahmanusta">rahmanusta</a>.</p>
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+        <a href="https://github.com/rahmanusta/AsciidocFX" class="button">
+            <small>View project on</small>
+            GitHub</a>
     </div>
+</header>
 
-            <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-000000-01");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+<div id="content-wrapper">
+<div class="inner clearfix">
+<section id="main-content">
+<div class="sect1">
+<h2 id="_asciidoc_editor_based_on_javafx_8">Asciidoc Editor based on JavaFX 8</h2>
 
-  </body>
+<div class="sectionbody">
+<div class="paragraph">
+    <p>Asciidoc FX is a book editor to build PDF, Epub or Mobi ebooks.</p>
+</div>
+<div class="sect2">
+    <h3 id="_features">Features</h3>
+
+    <div class="ulist">
+        <ul>
+            <li>
+                <p>Multi-platform (Windows, Mac, Linux ..)</p>
+            </li>
+            <li>
+                <p>Creating Asciidoc Books</p>
+            </li>
+            <li>
+                <p>Creating PDF, Epub, Mobi, Docbook</p>
+            </li>
+            <li>
+                <p>Full-Screen Support</p>
+            </li>
+            <li>
+                <p>Real-Time Preview</p>
+            </li>
+            <li>
+                <p>External Browser Support</p>
+            </li>
+            <li>
+                <p>Table Generator</p>
+            </li>
+        </ul>
+    </div>
+    <div class="paragraph">
+        <p>
+            <iframe width="560" height="365" src="//www.youtube.com/embed/2goMtz_vdtM" frameborder="0"
+                    allowfullscreen></iframe>
+
+        </p>
+    </div>
+</div>
+<div class="sect2">
+    <h3 id="_used_technologies">Used Technologies</h3>
+
+    <div class="paragraph">
+        <p>AsciidocFX uses Java, JavaScript and XML related technologies.</p>
+    </div>
+    <div class="ulist">
+        <ul>
+            <li>
+                <p>Java 8</p>
+            </li>
+            <li>
+                <p>Java FX 8</p>
+            </li>
+            <li>
+                <p>Nashorn JavaScript Engine</p>
+            </li>
+            <li>
+                <p>Asciidoctor.js</p>
+            </li>
+            <li>
+                <p>Spring Boot</p>
+            </li>
+            <li>
+                <p>Spring WebSocket</p>
+            </li>
+            <li>
+                <p>Docbook</p>
+            </li>
+            <li>
+                <p>Apache Fop</p>
+            </li>
+            <li>
+                <p>Saxon 6.5</p>
+            </li>
+            <li>
+                <p>Ace editor</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="sect2">
+    <h3 id="_some_shortcuts">Some Shortcuts</h3>
+
+    <div class="paragraph">
+        <p>AsciidocFX has some custom shortcuts. If you suggest us any shortcut request, we can implement i.t</p>
+    </div>
+    <table class="tableblock frame-all grid-all spread">
+        <colgroup>
+            <col style="width: 50%;">
+            <col style="width: 50%;">
+        </colgroup>
+        <thead>
+        <tr>
+            <th class="tableblock halign-left valign-top">
+                <strong>Shortcut</strong>
+            </th>
+            <th class="tableblock halign-left valign-top">
+                <strong>Detail</strong>
+            </th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>F12</strong></p></td>
+            <td class="tableblock halign-left valign-top"><p class="tableblock">Opens Firebug Lite</p></td>
+        </tr>
+        </tfoot>
+        <tbody>
+        <tr>
+            <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>tblx,y</strong> <em>press
+                Tab</em></p></td>
+            <td class="tableblock halign-left valign-top"><p class="tableblock">Generates asciidoc table
+                (x=row,y=column)</p></td>
+        </tr>
+        <tr>
+            <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>tblx.y</strong> <em>press
+                Tab</em></p></td>
+            <td class="tableblock halign-left valign-top"><p class="tableblock">Generates asciidoc table
+                (x=row,y=column)</p></td>
+        </tr>
+        <tr>
+            <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>src</strong> <em>press Tab</em>
+            </p></td>
+            <td class="tableblock halign-left valign-top"><p class="tableblock">Generates asciidoc source block</p></td>
+        </tr>
+        <tr>
+            <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>img</strong> <em>press Tab</em>
+            </p></td>
+            <td class="tableblock halign-left valign-top"><p class="tableblock">Generates image section</p></td>
+        </tr>
+        <tr>
+            <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>book</strong> <em>press Tab</em>
+            </p></td>
+            <td class="tableblock halign-left valign-top"><p class="tableblock">Generates book header section</p></td>
+        </tr>
+        <tr>
+            <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ctrl+B</strong></p></td>
+            <td class="tableblock halign-left valign-top"><p class="tableblock">Bolds selection</p></td>
+        </tr>
+        <tr>
+            <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ctrl+I</strong></p></td>
+            <td class="tableblock halign-left valign-top"><p class="tableblock">Italices selection</p></td>
+        </tr>
+        <tr>
+            <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ctrl+D</strong></p></td>
+            <td class="tableblock halign-left valign-top"><p class="tableblock">Duplicates selection</p></td>
+        </tr>
+        <tr>
+            <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ctrl+X</strong></p></td>
+            <td class="tableblock halign-left valign-top"><p class="tableblock">Removes current line</p></td>
+        </tr>
+        <tr>
+            <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ctrl+N</strong></p></td>
+            <td class="tableblock halign-left valign-top"><p class="tableblock">Creates new empty doc</p></td>
+        </tr>
+        <tr>
+            <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ctrl+S</strong></p></td>
+            <td class="tableblock halign-left valign-top"><p class="tableblock">Saves current doc</p></td>
+        </tr>
+        <tr>
+            <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ctrl-Shift-C</strong></p></td>
+            <td class="tableblock halign-left valign-top"><p class="tableblock">Surrounds backtick `` selection</p></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="sect2">
+    <h3 id="_asciidocfx_configuration">AsciidocFX Configuration</h3>
+
+    <div class="paragraph">
+        <p>You can configurate AsciidocFX with <code>config.yml</code> file in <code>/conf</code> directory</p>
+    </div>
+    <div class="paragraph">
+        <p>You can change Ace theme, font size, font family and other sections by editing it.</p>
+    </div>
+</div>
+<div class="sect2">
+    <h3 id="_how_to_run_asciidocfx_for_users">How to Run AsciidocFX (For Users)</h3>
+
+    <div class="olist arabic">
+        <ol class="arabic">
+            <li>
+                <p>Firstly, install <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">JRE
+                    8</a></p>
+            </li>
+            <li>
+                <p>Download the latest <a href="https://github.com/rahmanusta/AsciidocFX/releases">AsciidocFX.zip</a>
+                    and Extract it</p>
+            </li>
+            <li>
+                <p>Run</p>
+
+                <div class="ulist">
+                    <ul>
+                        <li>
+                            <p><code>bin/asciidocfx.bat</code> or <code>bin/asciidocfx.sh</code></p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="sect2">
+    <h3 id="_how_to_build_executable_jar_for_developers">How to Build executable JAR (For Developers)</h3>
+
+    <div class="olist arabic">
+        <ol class="arabic">
+            <li>
+                <p>Firstly, install <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">JDK
+                    8</a></p>
+            </li>
+            <li>
+                <p>Download <a href="http://maven.apache.org/download.cgi">Apache Maven</a> and set <code>/bin</code>
+                    directory to environment variables</p>
+            </li>
+            <li>
+                <p>Enter <code>AsciidocFX</code> directory and run <code>$ mvn clean install</code></p>
+            </li>
+            <li>
+                <p>Follow to <code>target/</code> directory and you will see <code>AsciidocFX.zip</code></p>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="sect2">
+    <h3 id="_support">Support</h3>
+
+    <div class="paragraph">
+        <p>Support AsciidocFX with pull request or open an issue for bug &amp; feature request.</p>
+    </div>
+    <div class="paragraph">
+        <p>Thanks.</p>
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+<aside id="sidebar">
+    <a href="https://github.com/rahmanusta/AsciidocFX/releases" class="button">
+        <small>Download</small>
+        Latest release
+    </a>
+
+    <p class="repo-owner"><a href="https://github.com/rahmanusta/AsciidocFX"></a> is maintained by <a
+            href="https://github.com/rahmanusta">rahmanusta</a>.</p>
+
+    <p>This page was generated by <a href="https://pages.github.com" rel="nofollow">GitHub Pages</a> using the Architect theme by <a
+            href="https://twitter.com/jasonlong" rel="nofollow">Jason Long</a>.</p>
+</aside>
+</div>
+</div>
+
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-55641163-1");
+        pageTracker._trackPageview();
+    } catch (err) {
+    }
+</script>
+
+</body>
 </html>
